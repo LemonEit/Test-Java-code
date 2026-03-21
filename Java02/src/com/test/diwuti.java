@@ -12,6 +12,7 @@ public class diwuti {
 
     public static class hello {
         //第一题
+        @SuppressWarnings("GrazieInspection")
         public static void main(String[] args) {
             System.out.println("善学如春起之苗");
             System.out.println("不见其增，日有所长");
@@ -35,7 +36,6 @@ public class diwuti {
                     "\n0.0" +
                     "\n10.9" +
                     "\n100.9");
-            //第三题
             System.out.println("java是一门跨平台的计算机语言\n" +
                     "被称为一次编写，处处运行");
 
