@@ -35,7 +35,7 @@ class Main {
         Hello chinese = new HelloChinese();
         Hello english = new HelloEnglish();
         Hello japanese = new HelloJapanese();
-        chinese.equals("HEllo");
+        //chinese.equals("HEllo");
         chinese.sayHello();
         english.sayHello();
         japanese.sayHello();
