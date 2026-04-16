@@ -1,4 +1,4 @@
-package com.Flower;
+package Flower;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 七彩鲜花销售管理系统主类
  * 提供系统菜单展示和功能调度入口
  */
-public class Flower {
+public class FlowerApp {
     /**
      * 程序主入口方法
      * 实现用户菜单展示和功能选择调度
@@ -14,7 +14,7 @@ public class Flower {
      * @param args 命令行参数，本程序未使用
      */
     public static void main(String[] args) {
-        FlowerService flowerService = new FlowerServiceImpl();
+        Flower flower = new Flower();
 
         /* 无限循环显示主菜单，直到用户选择退出 */
         while (true) {
@@ -30,10 +30,10 @@ public class Flower {
             String input = sc.next();
 
             switch (input) {
-                case "1" -> ((FlowerServiceImpl) flowerService).searchAllConsole();
-                case "2" -> ((FlowerServiceImpl) flowerService).updateSaleConsole();
-                case "3" -> ((FlowerServiceImpl) flowerService).deleteSaleConsole();
-                case "4" -> ((FlowerServiceImpl) flowerService).addSaleConsole();
+                case "1" -> flower.showAll();
+                case "2" -> flower.upda();
+                case "3" -> flower.del();
+                case "4" -> flower.add();
                 case "5" -> {
                     System.out.println("系统退出感谢使用");
                     return;
@@ -41,5 +41,6 @@ public class Flower {
                 default -> System.out.println("输入错误请重新输入");
             }
         }
+
     }
 }
